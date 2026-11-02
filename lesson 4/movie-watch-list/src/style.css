@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f3f4f6;
+  color: #222;
+}
+
+.app {
+  width: 90%;
+  max-width: 750px;
+  margin: 40px auto;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.add-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font: inherit;
+}
+
+button {
+  border: 0;
+  border-radius: 6px;
+  padding: 10px 15px;
+  background: #3159d9;
+  color: white;
+  cursor: pointer;
+  font: inherit;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.add-form button {
+  white-space: nowrap;
+}
+
+.empty {
+  text-align: center;
+  color: #777;
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+}
+
+.movie-list {
+  display: grid;
+  gap: 15px;
+}
+
+.movie-card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px #00000010;
+}
+
+.movie-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.movie-heading h3 {
+  margin: 0;
+}
+
+.remove-button {
+  background: #dc3545;
+}
+
+.label {
+  display: block;
+  margin: 16px 0 8px;
+  font-weight: bold;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.star-button {
+  padding: 2px;
+  background: transparent;
+  color: #f0ad00;
+  font-size: 25px;
+}
+
+.rating span {
+  margin-left: 8px;
+  color: #666;
+}
+
+textarea {
+  resize: vertical;
+}
+
+@media (max-width: 500px) {
+  .add-form {
+    flex-direction: column;
+  }
+
+  .movie-heading {
+    align-items: flex-start;
+  }
+}
